@@ -4,7 +4,7 @@ package javatest;
 import javax.swing.JOptionPane;
 
 /**
- *ReverseString class take string by user then print out the string and length
+ *ReverseString class take a string by user then print out the string, length and reverse string
  * 
  * @author Meher
  */
