@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ReverseArray class will all array are added in the system
+ * ReverseArray class add multiple array into the system
  * At the beginning print out all the arrays
  * then Print out the reverse array in a column and a row
  * @author Meher Khan
