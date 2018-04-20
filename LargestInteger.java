@@ -6,12 +6,12 @@
 package javatest;
 
 /**
- *
- * @author home
+ *Find out largest integer from an array
+ * @author Meher Khan
  */
 public class LargestInteger {
 
-    public static int findLargest(int myArray[]) {// 2nd write
+    public static int findLargest(int myArray[]) {
         int largest = myArray[0];
 
             for (int i = 0; i < myArray.length; i++) {
