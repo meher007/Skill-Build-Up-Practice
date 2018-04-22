@@ -68,6 +68,6 @@ public class StringCount {
         return ("Total chars : " + charCount +","+
                 "Total lines : " + lineCount +","+
                 "Total blues : "  + blueCount +","+
-                "Total owels :" + vowelCount);
+                "Total Vowels :" + vowelCount);
     }
 }
