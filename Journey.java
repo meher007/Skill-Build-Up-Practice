@@ -19,7 +19,7 @@ class Bike implements Vehicle {
     @Override // override start method
     public void start() { /* if we change any logic here it not going to effect other class and object 
                           therefore it is loose coupling*/
-        System.out.println("Travel by Bike");
+        System.out.println("travel by Bike");
     }
 }
 
@@ -27,10 +27,17 @@ class Car implements Vehicle {
 
     @Override
     public void start() {
-        System.out.println("Travel by Car");
+        System.out.println("travel by Car");
     }
 }
 
+class Plane implements Vehicle{
+
+@Override
+    public void start() {
+        System.out.println("travel by Plave");
+    }
+}
 
 
 // create main class Journey
