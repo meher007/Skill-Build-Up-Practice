@@ -35,7 +35,7 @@ public class Transport {
             loopCount = 3;
         }
 
-        Vehicle v; // Creates an instance of Journey class
+        Vehicle v; // Creates an instance of Vehicle class
 
         /*     //Same example can be done by ArryList
         
