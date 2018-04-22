@@ -35,7 +35,7 @@ class Plane implements Vehicle{
 
 @Override
     public void start() {
-        System.out.println("travel by Plave");
+        System.out.println("travel by Plane");
     }
 }
 
