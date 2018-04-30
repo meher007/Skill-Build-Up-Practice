@@ -12,8 +12,10 @@ import java.util.Scanner;
 
 public class AscendingOrder
 {
-    public static void main(String... args) //Another way declar main method
+    public static void main(String... args) //Another way declare main method
     {
+        ArrayConcatenation(); //ArrayConcatenation method to merge two arrays
+        
         int n, temp;
         Scanner s = new Scanner(System.in);
         System.out.print("Enter no. of elements you want in array:"); //Takes user request number of elements
@@ -42,5 +44,18 @@ public class AscendingOrder
             System.out.print(a[i] + ",");
         }
         System.out.print(a[n - 1]+" ");
+           
     }
+    
+    
+    public static void ArrayConcatenation() {
+    
+        String[] myArray = new String[3];
+        myArray[0] = "Cat";
+        myArray[1] = "Dog";
+        myArray[2] = myArray[1].concat(myArray[0]);
+        System.out.println("Two Arrays Concatenate  "+myArray[2]);
+       
+    }
+    
 }
