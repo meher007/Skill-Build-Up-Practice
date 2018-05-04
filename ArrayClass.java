@@ -26,8 +26,9 @@ for (Emplyee ee:e){
     System.out.println(ee.Name+" "+ee.Age);
 }
 */
-
-Employee[] e = new Employee[5];
+int z=5;/*Array size can be declare in run time by user inputing integer
+          Or Size may initiated by a object size (like CSV file object size)  */
+Employee[] e = new Employee[z];
 e[0]=e1;
 e[2]=e2;
 e[4]=e3;
