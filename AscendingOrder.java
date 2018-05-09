@@ -5,7 +5,7 @@ import java.util.Scanner;
  *Take number of element(integer) from user, then allow user to enter element (integer) one by one
  * Compare the integer into next integer if next integer is less then the first integer then swipe the value 
  * by using a extra memory 
- * This way make ascending order of all the element however, it does not remove duplicate integer
+ * This way make ascending order of all the element as well as it does remove duplicate integer
  * 
  * @author Meher Khan
  */
@@ -38,13 +38,49 @@ public class AscendingOrder
                 }
             }
         }
+        
+       
+        
+        
+          int b[] = new int[a.length];//Declare an new Array with length of Array a
+        int j = 0;
+        for (int i = 0; i < a.length - 1; i++) {
+            if (a[i] != a[i + 1]) {
+                b[j] = a[i];
+                j++;
+            }
+        }
+        b[j] = a[a.length - 1];
+
+        int Count = 0;
+
+        for (int i = 0; i < b.length; i++) { // Using for loop to get the length of b Array's until Zero value
+
+            if (b[i] == Count) {
+
+                Count = i;
+            }
+        }
+
+        System.out.print("Ascending Order: ");
+        for (int i = 0; i < Count; i++) {/* Print out will continue until any value left in b Array 
+                                           means it is not going print any zero value. */
+            System.out.print(b[i] + ",");
+        }
+        //System.out.println(b[n - 1] + " "); //make space
+
+    }
+        
+        
+        
+        /*
         System.out.print("Ascending Order: ");
         for (int i = 0; i < n - 1; i++) 
         {
             System.out.print(a[i] + ",");
         }
         System.out.print(a[n - 1]+" ");
-           
+         */  
     }
     
     
