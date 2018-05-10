@@ -58,30 +58,33 @@ public class AscendingOrder
 
             if (b[i] == Count) {
 
-                Count = i;
+                Count = i; /*If user enter 5,4,3,2,1 in this circumtances count variable always zero because Array b
+                         and Array a will be same length  OR if b[i] value is zero user could enter 5,0,3,2,1 
+                         then Count and i variable is 0 */
             }
         }
 
-        System.out.print("Ascending Order: ");
-        for (int i = 0; i < Count; i++) {/* Print out will continue until any value left in b Array 
-                                           means it is not going print any zero value. */
-            System.out.print(b[i] + ",");
-        }
-        //System.out.println(b[n - 1] + " "); //make space
+       
+        if (Count == 0) {//We need this 'if condition' from above explanation 
 
-    }
-        
-        
-        
-        /*
+            System.out.print("Ascending Order: ");
+
+            for (int i = 0; i < b.length; i++) {
+
+                System.out.print(b[i] + ",");
+         }
+        } 
+        else // technically else condition will not execute when there is no duplicate element 
+        {  
         System.out.print("Ascending Order: ");
-        for (int i = 0; i < n - 1; i++) 
-        {
-            System.out.print(a[i] + ",");
         }
-        System.out.print(a[n - 1]+" ");
-         */  
-    }
+        for (int i = 0; i < Count; i++) {/* Print out will continue until any value left in b Array 
+                                            means it is not going print any zero value. */
+            System.out.print(b[i] + ",");
+       }
+       }
+       } 
+     
     
     
     public static void ArrayConcatenation() {
